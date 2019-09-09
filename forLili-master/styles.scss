@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  max-width: 100%;
+}
+$bgColor: #c5fbff;
+$deepPurple: #2d0c3e;
+$lightBlue: #689cc2;
+$mainColor: white;
+$gradient: linear-gradient(#aa5188, #451557);
+$gridGradient: linear-gradient(to right, #9d2965, #cf3f56);
+$registerGradient: linear-gradient(to right, #3b1053, #014c85);
+$productName: #b1b1b1;
+$box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.15);
+$paragraph: 20px;
+$border: 1px solid black;
+$borderRadius: 25px;
+$space: 50px;
+@mixin sectionHeading {
+  color: $deepPurple;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+@mixin button {
+  color: $deepPurple;
+  padding: 15px;
+  border: 2px solid $deepPurple;
+  border-radius: $borderRadius;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  cursor: pointer;
+  &:hover{
+    background: $deepPurple;
+    color: $mainColor;
+  }
+}
+body {
+  background-color: $bgColor;
+
+  display: grid;
+  grid-template-columns: 15% 85%;
+
+  #mainNav {
+    font-size: $paragraph;
+    color: $mainColor;
+    line-height: 50px;
+    background: $gradient;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    .cashback {
+      color: $deepPurple;
+      background: white;
+      width: 100%;
+      border-radius: $borderRadius;
+    }
+    .myProfile {
+      margin-top: 250px;
+    }
+  }
+}
+
+.section1 {
+  background-image: url(/img/Group94.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: contain;
+  background-color: $bgColor;
+  display: flex;
+  justify-content: space-between;
+
+  .registration {
+    padding-top: 30px;
+    width: 20%;
+    position: relative;
+    top: 150px;
+    left: 80%;
+    background: white;
+    box-shadow: $box-shadow;
+    border-radius: $borderRadius;
+    text-align: center;
+    color: $deepPurple;
+    height: 450px;
+    h2 {
+      padding-top: 15px;
+      color: $lightBlue;
+    }
+    p {
+      color: $deepPurple;
+      border: 1px solid $lightBlue;
+      border-radius: $borderRadius;
+      box-shadow: $box-shadow;
+      text-align: left;
+      padding: 10px;
+      margin: 15px;
+      font-size: 10px;
+    }
+    .register {
+      color: $mainColor;
+      background-image: $registerGradient;
+    }
+  }
+}
+.section2 {
+  background-color: $bgColor;
+  h1 {
+    padding-top: $space;
+    @include sectionHeading;
+  }
+  .choose {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    p {
+      font-size: $paragraph;
+      margin: 0 40px;
+      text-align: center;
+    }
+  }
+  .cashbackshops {
+    #gridContainer {
+      width: 80%;
+      margin: auto;
+      grid-gap: 20px;
+      padding-top: $space;
+      @include grid;
+
+      .shops {
+        box-shadow: $box-shadow;
+        border-radius: $borderRadius;
+        background: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: $paragraph;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img {
+          padding: 20px;
+          object-fit: contain;
+        }
+        .twoPercent {
+          padding: 20px;
+          border-radius: $borderRadius;
+          color: $mainColor;
+          font-size: 15px;
+          background: linear-gradient(to right, #451557, #aa5188);
+          em {
+            font-size: $paragraph;
+          }
+        }
+      }
+    }
+  }
+  .allshops {
+    @include button;
+    margin-top: $space;
+  }
+}
+.section3 {
+  h1 {
+    margin-top: $space;
+    @include sectionHeading;
+    margin-bottom: $space;
+  }
+  #gridContainerTwo {
+    @include grid;
+    grid-gap: 40px;
+    width: 80%;
+    margin: auto;
+    padding-top: $space;
+    padding-bottom: $space;
+    .sale {
+      border-radius: $borderRadius;
+      box-shadow: $box-shadow;
+      .basic {
+        width: 100%;
+        border-radius: $borderRadius;
+      }
+      .plusMinus {
+        background-image:$gridGradient;
+        border-top-left-radius: $borderRadius;
+        border-bottom-right-radius: $borderRadius;
+        text-align: center;
+        width: 30%;
+        position: relative;
+        bottom: 115px;
+      }
+      .name {
+        color: $productName;
+        font-weight: bold;
+      }
+      .price {
+        color: $deepPurple;
+        font-weight: 900;
+      }
+      .inline {
+        display: flex;
+        justify-content: space-between;
+      }
+      .discussion {
+        color: $deepPurple;
+        font-size: $paragraph;
+      }
+      .view {
+        border-top-left-radius: $borderRadius;
+        border-bottom-right-radius: $borderRadius;
+        width: 50%;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+        color: $mainColor;
+        background-image: $registerGradient;
+      }
+    }
+  }
+  .allshops {
+    @include button;
+    margin-bottom: $space;
+    width: 20%;
+  }
+}
+.section4 {
+  h1{
+    @include sectionHeading;
+  }
+  border: $border;
+  border-radius: $borderRadius;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: $mainColor;
+  margin-bottom: $space;
+  .clickhere {
+    font-size: $paragraph;
+    text-align: center;
+    color: $deepPurple;
+    margin-top: $space;
+    margin-bottom: $space;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: $space;
+  }
+  .allshops{
+    @include button;   
+    margin-bottom: $space;
+  }
+}
+#mainFooter {
+  background-color: $deepPurple;
+  color: $mainColor;
+  h1{
+    font-size: 20px;
+  }
+  p{
+    font-size: 12px;
+  }
+  #navGrid {
+    display: grid; 
+    gap:20px;
+    grid-template-areas:
+    "one two three four five five"
+    "six seven eight nine ten ten"
+    "eleven . . twelve thirteen fourteen";
+    .one {
+    grid-area: one;
+    }
+    .two {
+    grid-area: two;
+    }
+    .three {
+    grid-area: three;
+    }
+    .four {
+    grid-area: four;
+    }
+    .five {
+    grid-area: five;
+    }
+    .six {
+    grid-area: six;
+    }
+    .seven {
+    grid-area: seven;
+    }
+    .eight {
+    grid-area: eight;
+    }
+    .nine {
+    grid-area: nine;
+    }
+    .ten {
+    grid-area: ten;
+    display: flex;
+    justify-content: space-between;
+    }
+    .eleven {
+    grid-area: eleven;
+    }
+    .twelve{
+      grid-area: twelve;
+      text-align: end;
+    }
+    .thirteen{
+      grid-area: thirteen;
+      text-align: end;
+    }
+    .fourteen{
+      grid-area: fourteen;
+      text-align: end;
+    }
+  }
+
+}
