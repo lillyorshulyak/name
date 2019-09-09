@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100%;
+}
+
+.section1 {
+  background-image: url(/img/Group94.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: contain;
+  background-color: #C5FBFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section1 #mainNav {
+  font-size: 20px;
+  color: white;
+  line-height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#AA5188), to(#451557));
+  background: linear-gradient(#AA5188, #451557);
+  width: 15%;
+}
+
+.section1 #mainNav .cashback {
+  color: #2D0C3E;
+  background: white;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.section1 #mainNav .myProfile {
+  margin-top: 250px;
+}
+
+.section1 .registration {
+  width: 20%;
+  position: relative;
+  top: 110px;
+  background: white;
+  -webkit-box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  text-align: center;
+  color: #2D0C3E;
+  height: 490px;
+}
+
+.section1 .registration h2 {
+  color: #689CC2;
+}
+
+.section1 .registration p {
+  color: #2D0C3E;
+  border: 1px solid #689CC2;
+  border-radius: 25px;
+  -webkit-box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  padding: 10px;
+  margin: 15px;
+  font-size: 13px;
+}
+
+.section1 .registration .register {
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3B1053), to(#014C85));
+  background-image: linear-gradient(to right, #3B1053, #014C85);
+}
+
+.section2 {
+  background-color: #C5FBFF;
+}
+
+.section2 h1 {
+  padding-top: 50px;
+  color: #2D0C3E;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section2 .choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px;
+}
+
+.section2 .choose p {
+  font-size: 20px;
+  margin: 0 40px;
+  text-align: center;
+}
+
+.section2 .cashbackshops #gridContainer {
+  width: 70%;
+  margin: auto;
+  grid-gap: 20px;
+  padding-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 20px;
+  margin-left: 20px;
+}
+
+.section2 .cashbackshops #gridContainer .shops {
+  -webkit-box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  padding: 10px;
+  background: white;
+  height: 300px;
+  width: 264px;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.section2 .cashbackshops #gridContainer .shops img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section2 .cashbackshops #gridContainer .shops .twoPercent {
+  padding: 20px;
+  border-radius: 25px;
+  width: 86%;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: -webkit-gradient(linear, left top, right top, from(#451557), to(#AA5188));
+  background: linear-gradient(to right, #451557, #AA5188);
+}
+
+.section2 .cashbackshops #gridContainer .shops .twoPercent em {
+  font-size: 20px;
+}
+
+.section2 .allshops {
+  color: #2D0C3E;
+  padding: 15px;
+  border: 2px solid #2D0C3E;
+  border-radius: 25px;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.section3 h1 {
+  color: #2D0C3E;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section3 #gridContainerTwo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 20px;
+  grid-gap: 40px;
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section3 #gridContainerTwo .sale {
+  border-radius: 25px;
+  -webkit-box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.section3 #gridContainerTwo .sale .basic {
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+}
+
+.section3 #gridContainerTwo .sale .name {
+  color: #B1B1B1;
+  font-weight: bold;
+}
+
+.section3 #gridContainerTwo .sale .price {
+  color: #2D0C3E;
+  font-weight: 900;
+}
+
+.section3 #gridContainerTwo .sale .inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section3 #gridContainerTwo .sale .discussion {
+  color: #2D0C3E;
+  font-size: 20px;
+}
+
+.section3 #gridContainerTwo .sale .view {
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 50%;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3B1053), to(#014C85));
+  background-image: linear-gradient(to right, #3B1053, #014C85);
+}
+
+.section3 #gridContainerTwo .sale .plusMinus {
+  background-color: linear-gradient(to right, #9D2965, #CF3F56);
+  border: 1px solid black;
+}
+
+.section3 .allshops {
+  color: #2D0C3E;
+  padding: 15px;
+  border: 2px solid #2D0C3E;
+  border-radius: 25px;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 20%;
+}
+
+.section4 {
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.section4 .clickhere {
+  font-size: 20px;
+  text-align: center;
+  color: #2D0C3E;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.section4 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+#mainNav {
+  background-color: #2D0C3E;
+  color: white;
+}
+
+#mainNav #navGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6, 1fr;
+      grid-template-columns: 6, 1fr;
+      grid-template-areas: "one two three four five five" "six seven eight nine nine" "ten . . . eleven eleven";
+}
+
+#mainNav #navGrid .one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+#mainNav #navGrid .two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+#mainNav #navGrid .three {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+#mainNav #navGrid .four {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: four;
+}
+
+#mainNav #navGrid .five {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: five;
+}
+
+#mainNav #navGrid .six {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: six;
+}
+
+#mainNav #navGrid .seven {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: seven;
+}
+
+#mainNav #navGrid .eight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: eight;
+}
+
+#mainNav #navGrid .nine {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: nine;
+}
+
+#mainNav #navGrid .nine li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#mainNav #navGrid .ten {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: ten;
+}
+
+#mainNav #navGrid .eleven {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: eleven;
+}
+/*# sourceMappingURL=styles.css.map */
